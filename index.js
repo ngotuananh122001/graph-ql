@@ -21,7 +21,7 @@ async function startApolloServer() {
     resolvers,
     plugins: [
       ApolloServerPluginDrainHttpServer({ httpServer }),
-      ApolloServerPluginLandingPageLocalDefault({ embed: true }),
+      //ApolloServerPluginLandingPageLocalDefault({ embed: true }),
     ],
   });
 
