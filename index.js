@@ -19,13 +19,6 @@ async function startApolloServer() {
     const server = new ApolloServer({
         typeDefs,
         resolvers,
-        plugins: [
-            ApolloServerPluginLandingPageProductionDefault({
-                graphRef: 'my-graph-id@my-graph-variant',
-                footer: false,
-            }),
-            //ApolloServerPluginLandingPageLocalDefault({ embed: true }),
-        ],
     });
 
     await server.start();
